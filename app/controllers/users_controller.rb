@@ -15,4 +15,10 @@ class UsersController < ApplicationController
       render :new, notice: 'ユーザーを作成できませんでした', status: :unprocessable_entity
     end
   end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:name, :age, :blood_type, :is_married)
+  end
 end

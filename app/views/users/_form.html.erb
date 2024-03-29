@@ -1,0 +1,21 @@
+<%= form_with model: user do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+  </div>
+  <div>
+    <%= f.label :blood_type %>
+    <%= f.select :blood_type, User.blood_types.keys.map {|k| [k, k]} %>
+  </div>
+  <div>
+    <%= f.label :is_married %>
+    <%= f.select :is_married, User.is_marrieds.keys.map {|k| [k,k]} %>
+  </div>
+  <div>
+    <%= f.submit '作成' %>
+  </div>
+<% end %>
