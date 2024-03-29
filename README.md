@@ -1,24 +1,7 @@
-# README
+# enum
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 目的
+Railsのenumについて理解を深める
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 内容
+サンプルプログラムを自分で用意し、enumの各種メソッドを使って動きを確認します。
