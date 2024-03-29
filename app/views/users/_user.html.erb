@@ -1,7 +1,7 @@
 <tr>
   <td><%= user.name %></td>
   <td><%= user.age %></td>
-  <td><%= user.blood_type %></td>
+  <td><%= select :blood_type, :name, options_for_select(User.blood_types.keys.map {|k| [k,k]}, selected: user.blood_type), class: 'js-blood_type', data: {id: user.id} %></td>
   <td><%= user.is_married %></td>
   <td>
     <% if user.A? %>
