@@ -3,4 +3,15 @@
   <td><%= user.age %></td>
   <td><%= user.blood_type %></td>
   <td><%= user.is_married %></td>
+  <td>
+    <% if user.A? %>
+      <%= 'ビリ' %>
+    <% elsif user.B? %>
+      <%= '1位' %>
+    <% elsif user.O? %>
+      <%= '2位' %>
+    <% else %>
+      <%= '3位' %>
+    <% end %>
+  </td>
 </tr>
